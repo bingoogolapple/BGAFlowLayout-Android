@@ -13,10 +13,25 @@ demo中分别演示了在xml使用方式和在java代码中动态添加
 ![Image of 平均分配剩余空间](https://raw.githubusercontent.com/bingoogolapple/BGAFlowLayout-Android/server/screenshots/flowlayout1.gif)
 ![Image of 不平均分配剩余空间](https://raw.githubusercontent.com/bingoogolapple/BGAFlowLayout-Android/server/screenshots/flowlayout2.gif)
 
+### Gradle依赖
+
 ```groovy
 dependencies {
     compile 'cn.bingoogolapple:bga-flowlayout:1.0.0@aar'
 }
+```
+
+### 自定义属性说明
+
+```xml
+<declare-styleable name="BGAFlowLayout">
+    <!-- 标签之间的水平间距 -->
+    <attr name="fl_horizontalChildGap" format="dimension" />
+    <!-- 标签之间的垂直间距 -->
+    <attr name="fl_verticalChildGap" format="dimension" />
+    <!-- 是否平均分配每一行的剩余水平方向的空白区域给该行的标签 -->
+    <attr name="fl_isDistributionWhiteSpacing" format="boolean" />
+</declare-styleable>
 ```
 
 ### 代码是最好的老师，更多详细用法请查看[Demo](https://github.com/bingoogolapple/BGAFlowLayout-Android/tree/master/demo)
