@@ -1,3 +1,5 @@
+[![Android Gems](http://www.android-gems.com/badge/bingoogolapple/BGAFlowLayout-Android.svg?branch=master)](http://www.android-gems.com/lib/bingoogolapple/BGAFlowLayout-Android)
+
 :running:BGAFlowLayout-Android v1.0.0:running:
 ============
 >关于我<br/>
