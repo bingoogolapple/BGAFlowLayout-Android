@@ -13,7 +13,7 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.android.support:appcompat-v7:23.0.1'
     compile 'cn.bingoogolapple:bga-flowlayout:1.0.0@aar'
 //    compile project(':library')
 }
