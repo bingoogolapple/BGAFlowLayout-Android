@@ -1,9 +1,15 @@
 <resources>
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorAccent">#ffc000</item>
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- 状态栏颜色 -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- toolbar（actionbar）背景颜色 -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
     </style>
-    
+
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
     <style name="TvMainTag" parent="WrapWrap">
         <item name="android:background">@drawable/selector_tag</item>
         <item name="android:padding">5dp</item>
@@ -12,5 +18,6 @@
         <item name="android:singleLine">true</item>
         <item name="android:ellipsize">end</item>
     </style>
+
 
 </resources>

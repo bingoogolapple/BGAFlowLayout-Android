@@ -5,8 +5,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.Gravity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -24,11 +26,21 @@ public class MainActivity extends AppCompatActivity {
         mTagEt = (EditText) findViewById(R.id.et_main_tag);
         mFlowLayout = (BGAFlowLayout) findViewById(R.id.flowlayout);
         initData();
+
+        mTagEt.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if (actionId == EditorInfo.IME_ACTION_GO) {
+                    onClick(null);
+                }
+                return true;
+            }
+        });
     }
 
     public void initData() {
         for (int i = 0; i < mVals.length; i++) {
-            mFlowLayout.addView(getLabel(mVals[i]), new ViewGroup.MarginLayoutParams(ViewGroup.MarginLayoutParams.WRAP_CONTENT, ViewGroup.MarginLayoutParams.WRAP_CONTENT));
+            mFlowLayout.addView(getLabel(mVals[i]), mFlowLayout.getChildCount() - 1, new ViewGroup.MarginLayoutParams(ViewGroup.MarginLayoutParams.WRAP_CONTENT, ViewGroup.MarginLayoutParams.WRAP_CONTENT));
         }
     }
 
@@ -48,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View view) {
         String tag = mTagEt.getText().toString().trim();
         if (!TextUtils.isEmpty(tag)) {
-            mFlowLayout.addView(getLabel(tag), new ViewGroup.MarginLayoutParams(ViewGroup.MarginLayoutParams.WRAP_CONTENT, ViewGroup.MarginLayoutParams.WRAP_CONTENT));
+            mFlowLayout.addView(getLabel(tag), mFlowLayout.getChildCount() - 1, new ViewGroup.MarginLayoutParams(ViewGroup.MarginLayoutParams.WRAP_CONTENT, ViewGroup.MarginLayoutParams.WRAP_CONTENT));
         }
         mTagEt.setText("");
     }

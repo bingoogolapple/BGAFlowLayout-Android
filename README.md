@@ -1,10 +1,7 @@
-:running:BGAFlowLayout-Android v1.0.0:running:
+:running:BGAFlowLayout-Android:running:
 ============
 
-[![Android Gems](http://www.android-gems.com/badge/bingoogolapple/BGAFlowLayout-Android.svg?branch=master)](http://www.android-gems.com/lib/bingoogolapple/BGAFlowLayout-Android)
-
->关于我<br/>
->微博：<a href="http://weibo.com/bingoogol" target="_blank">bingoogolapple</a>&nbsp;&nbsp;&nbsp;&nbsp;主页：<a  href="http://www.bingoogolapple.cn" target="_blank">bingoogolapple.cn</a>&nbsp;&nbsp;&nbsp;&nbsp;邮箱：<a href="mailto:bingoogolapple@gmail.com" target="_blank">bingoogolapple@gmail.com</a>
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/cn.bingoogolapple/bga-flowlayout/badge.svg)](https://maven-badges.herokuapp.com/maven-central/cn.bingoogolapple/bga-flowlayout)
 
 Android流式布局，可配置是否将每一行的空白区域平均分配给子控件。
 
@@ -13,14 +10,14 @@ Android流式布局，可配置是否将每一行的空白区域平均分配给�
 demo中分别演示了在xml使用方式和在java代码中动态添加
 
 ### 效果图
-![Image of 平均分配剩余空间](https://raw.githubusercontent.com/bingoogolapple/BGAFlowLayout-Android/server/screenshots/flowlayout1.gif)
+![Image of 平均分配剩余空间](http://7xk9dj.com1.z0.glb.clouddn.com/flowlayout/screenshots/bga-flowlayout-demo1.gif)
 ![Image of 不平均分配剩余空间](https://raw.githubusercontent.com/bingoogolapple/BGAFlowLayout-Android/server/screenshots/flowlayout2.gif)
 
 ### Gradle依赖
 
 ```groovy
 dependencies {
-    compile 'cn.bingoogolapple:bga-flowlayout:1.0.0@aar'
+    compile 'cn.bingoogolapple:bga-flowlayout:latestVersion@aar'
 }
 ```
 
@@ -37,4 +34,9 @@ dependencies {
 </declare-styleable>
 ```
 
-### 代码是最好的老师，更多详细用法请查看[Demo](https://github.com/bingoogolapple/BGAFlowLayout-Android/tree/master/demo)
+### 关于我
+
+| 新浪微博 | 个人主页 | 邮箱 | BGA系列开源库QQ群 |
+| ------------ | ------------- | ------------ | ------------ |
+| <a href="http://weibo.com/bingoogol" target="_blank">bingoogolapple</a> | <a  href="http://www.bingoogolapple.cn" target="_blank">bingoogolapple.cn</a>  | <a href="mailto:bingoogolapple@gmail.com" target="_blank">bingoogolapple@gmail.com</a> | ![BGA_CODE_CLUB](http://7xk9dj.com1.z0.glb.clouddn.com/BGA_CODE_CLUB.png?imageView2/2/w/200) |
+
