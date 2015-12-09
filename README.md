@@ -10,8 +10,9 @@ Android流式布局，可配置是否将每一行的空白区域平均分配给�
 demo中分别演示了在xml使用方式和在java代码中动态添加
 
 ### 效果图
+
 ![Image of 平均分配剩余空间](http://7xk9dj.com1.z0.glb.clouddn.com/flowlayout/screenshots/bga-flowlayout-demo1.gif)
-![Image of 不平均分配剩余空间](https://raw.githubusercontent.com/bingoogolapple/BGAFlowLayout-Android/server/screenshots/flowlayout2.gif)
+![Image of 不平均分配剩余空间](http://7xk9dj.com1.z0.glb.clouddn.com/flowlayout/screenshots/bga-flowlayout-demo2.gif)
 
 ### Gradle依赖
 
